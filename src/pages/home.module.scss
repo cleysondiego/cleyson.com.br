@@ -1,0 +1,23 @@
+.contentContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 4.5rem;
+}
+
+.icons {
+  font-size: 2rem;
+
+  a {
+    margin-right: 0.5rem;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
+}
