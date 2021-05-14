@@ -9,24 +9,23 @@ export default function Home() {
   return (
     <>
       <Head>
-          <title>Em breve! | Cleyson Diego</title>
+          <title>Home | Cleyson Diego</title>
       </Head>
-      <div className={styles.contentContainer}>
-        <h1 className={styles.title}>Em breve!</h1>
-        <div className={styles.icons}>
-          <a href="mailto:cleyson7@hotmail.com">
-            <HiMail />
-          </a>
 
-          <a href="https://github.com/cleysondiego" target="_blank" rel="noreferrer noopener">
-            <SiGithub />
-          </a>
+      <main className={styles.contentContainer}>
+        <section className={styles.hero}>
+          <span>👋🏻 Hey, bem-vindo</span>
+          <h1>Me chamo <span>Cleyson Diego</span>.</h1>
 
-          <a href="https://www.linkedin.com/in/cleysondiego/" target="_blank" rel="noreferrer noopener">
-            <SiLinkedin />
-          </a>
-        </div>
-      </div>
+          <p>
+            Sou desenvolvedor mobile e aqui<br />
+            tratarei de assuntos como: <span>tecnologia</span>,<br />
+            <span>desenvolvimento de software</span> e <span>aplicativos</span>.
+          </p>
+        </section>
+
+        <img src="/images/avatar.svg" alt="Working" />
+      </main>
     </>
   )
 }
