@@ -19,8 +19,8 @@ export default function Home() {
 
           <p>
             Sou desenvolvedor mobile e aqui<br />
-            tratarei de assuntos como: <span>tecnologia</span>,<br />
-            <span>desenvolvimento de software</span> e <span>aplicativos</span>.
+            você encontrará assuntos como: <span>tecnologia</span>,<br />
+            <span>desenvolvimento de software</span> e <span>desenvolvimento pessoal</span>.
           </p>
         </section>
 
