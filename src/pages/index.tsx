@@ -1,8 +1,5 @@
 import Head from 'next/head';
 
-import { SiGithub, SiLinkedin } from 'react-icons/si';
-import { HiMail } from 'react-icons/hi';
-
 import styles from './home.module.scss';
 
 export default function Home() {
