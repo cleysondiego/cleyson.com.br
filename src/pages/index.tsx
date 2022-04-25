@@ -1,28 +1,59 @@
-import Head from 'next/head';
+import Image from 'next/image';
+import { Card } from '../components/Card';
+
+import { Head } from '../components/Head';
 
 import styles from './home.module.scss';
 
 export default function Home() {
   return (
     <>
-      <Head>
-          <title>Home | Cleyson Diego</title>
-      </Head>
+      <Head title='Cleyson Diego' />
+      <div className={styles.container}>
+        <main className={styles.contentContainer}>
+          <img
+            src='/images/profile.jpeg'
+            alt='Avatar'
+          />
+          {/* <Image
+            src='/images/profile.jpeg'
+            alt='Avatar'
+            width='230px'
+            height='250px'
+          /> */}
 
-      <main className={styles.contentContainer}>
-        <section className={styles.hero}>
-          <span>👋🏻 Hey, bem-vindo</span>
-          <h1>Me chamo <span>Cleyson Diego</span>.</h1>
+          <h1>Cleyson Diego</h1>
 
           <p>
-            Sou desenvolvedor mobile e aqui<br />
-            você encontrará assuntos como: <span>tecnologia</span>,<br />
-            <span>desenvolvimento de software</span> e <span>desenvolvimento pessoal</span>.
+            Desenvolvedor de Software apaixonado por Mobile, resolver problemas e criar produtos incríveis.
           </p>
-        </section>
 
-        <img src="/images/avatar.svg" alt="Working" />
-      </main>
+          <div>
+
+            <Card
+              title='LinkedIn'
+              description='Veja minha tragetória profissional'
+              link='https://www.linkedin.com/in/cleysondiego/'
+            />
+
+            <Card
+              title='Github'
+              description='Conheça meus projetos e habilidades técnicas'
+              link='https://www.github.com/cleysondiego'
+            />
+
+            <Card
+              title='Medium'
+              description='Acompanhe os textos que publiquei sobre tecnologia'
+              link='https://medium.com/@cleysondiego'
+            />
+          </div>
+        </main>
+
+        <footer className={styles.footer}>
+          Cleyson Diego • Todos os direitos reservados
+        </footer>
+      </div>
     </>
   )
 }

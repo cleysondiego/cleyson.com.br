@@ -1,13 +1,11 @@
-import Head from "next/head";
+import { Head } from '../../components/Head';
 
 import styles from './styles.module.scss';
 
 export default function Privacy() {
   return (
     <>
-      <Head>
-        <title>Privacy Policy | Cleyson Diego</title>
-      </Head>
+      <Head title='Privacy Policy | Cleyson Diego' />
 
       <main className={styles.container}>
         <article className={styles.privacy}>
