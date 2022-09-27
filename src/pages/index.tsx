@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Card } from '../components/Card';
 
+import { Card } from '../components/Card';
 import { Head } from '../components/Head';
 
 import styles from './home.module.scss';
@@ -11,16 +11,12 @@ export default function Home() {
       <Head title='Cleyson Diego' />
       <div className={styles.container}>
         <main className={styles.contentContainer}>
-          <img
+          <Image
             src='/images/profile.jpeg'
             alt='Avatar'
+            width='200px'
+            height='200px'
           />
-          {/* <Image
-            src='/images/profile.jpeg'
-            alt='Avatar'
-            width='230px'
-            height='250px'
-          /> */}
 
           <h1>Cleyson Diego</h1>
 
