@@ -49,6 +49,10 @@
       width: 60%;
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    color: #ddd;
+  }
 }
 
 .footer {
@@ -58,6 +62,11 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  color: #3b3b3b;
+
+  @media (prefers-color-scheme: dark) {
+    color: #ddd;
+  }
 }
 
 @media (max-width: 600px) {
