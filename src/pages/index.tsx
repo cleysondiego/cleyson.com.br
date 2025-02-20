@@ -13,9 +13,9 @@ export default function Home() {
         <main className={styles.contentContainer}>
           <Image
             src='/images/profile.jpeg'
-            alt='Avatar'
-            width='200px'
-            height='200px'
+            alt='Picture of Cleyson'
+            width={200}
+            height={200}
           />
 
           <h1>Cleyson Diego</h1>
