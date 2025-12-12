@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Cleyson Diego - Engenheiro Mobile",
+  "short_name": "Cleyson Diego - Engenheiro Mobile",
+  "description": "Site pessoal do Cleyson Diego, Engenheiro Mobile",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
