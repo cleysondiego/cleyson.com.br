@@ -1,0 +1,146 @@
+.container {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #3b3b3b;
+
+  @media (prefers-color-scheme: dark) {
+    color: #ddd;
+  }
+}
+
+.header {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #666;
+    font-size: 1.1rem;
+
+    @media (prefers-color-scheme: dark) {
+      color: #999;
+    }
+  }
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #3b3b3b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #999;
+
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
+
+.postList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  padding: 3rem 0;
+
+  @media (prefers-color-scheme: dark) {
+    color: #999;
+  }
+}
+
+.postCard {
+  padding: 1.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    border-color: #3b3b3b;
+    transform: translateY(-2px);
+  }
+
+  a {
+    display: block;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #3b3b3b;
+
+    @media (prefers-color-scheme: dark) {
+      color: #ddd;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #3b3b3b;
+
+    &:hover {
+      border-color: #eaeaea;
+    }
+  }
+}
+
+.excerpt {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: #999;
+  }
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #888;
+
+  @media (prefers-color-scheme: dark) {
+    color: #777;
+  }
+}
+
+.date {
+  font-weight: 500;
+}
+
+.author {
+  &::before {
+    content: '•';
+    margin-right: 1rem;
+  }
+}
+
+.footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+
+  @media (prefers-color-scheme: dark) {
+    color: #999;
+    border-color: #3b3b3b;
+  }
+}

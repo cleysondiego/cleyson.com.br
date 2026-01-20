@@ -27,6 +27,13 @@ export default function Home() {
           <div>
 
             <Card
+              title='Blog'
+              description='Leia meus posts sobre desenvolvimento de software'
+              link='/blog'
+              isInternal
+            />
+
+            <Card
               title='LinkedIn'
               description='Veja minha tragetória profissional'
               link='https://www.linkedin.com/in/cleysondiego/'
