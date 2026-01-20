@@ -43,6 +43,12 @@ export default function Home() {
               description='Acompanhe os textos que publiquei sobre tecnologia'
               link='https://medium.com/@cleysondiego'
             />
+
+            <Card
+              title='Blog'
+              description='Leia meus posts pessoais'
+              link='/blog'
+            />
           </div>
         </main>
 
