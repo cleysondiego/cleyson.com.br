@@ -8,7 +8,7 @@ import styles from './home.module.scss';
 export default function Home() {
   return (
     <>
-      <Head title='Cleyson Diego' />
+      <Head title='Cleyson Diego | Desenvolvedor Mobile' />
       <div className={styles.container}>
         <main className={styles.contentContainer}>
           <Image
@@ -25,6 +25,12 @@ export default function Home() {
           </p>
 
           <div>
+            <Card
+              title='Blog'
+              description='Leia meus posts sobre desenvolvimento de software'
+              link='/blog'
+              isInternal
+            />
 
             <Card
               title='LinkedIn'
@@ -36,12 +42,6 @@ export default function Home() {
               title='Github'
               description='Conheça meus projetos e habilidades técnicas'
               link='https://www.github.com/cleysondiego'
-            />
-
-            <Card
-              title='Medium'
-              description='Acompanhe os textos que publiquei sobre tecnologia'
-              link='https://medium.com/@cleysondiego'
             />
           </div>
         </main>
