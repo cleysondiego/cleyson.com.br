@@ -6,11 +6,13 @@ Disponível em: [cleyson.com.br](https://cleyson.com.br)
 
 ## Funcionalidades
 
-- Página inicial com perfil e links para Blog, LinkedIn e GitHub
-- Blog com posts em Markdown, ordenados por data
+- Página inicial com bio, posts recentes e projetos open source
+- Página Sobre com o contexto de cada projeto
+- Blog com posts em Markdown, ordenados por data, com capa e tempo de leitura
 - Página de post com conteúdo renderizado a partir de arquivos `.md`
 - Página de privacidade
-- Design responsivo com SCSS Modules
+- Tema claro e escuro (segue o sistema, com botão para alternar)
+- Design responsivo com SCSS Modules e fontes Archivo e JetBrains Mono
 - Geração estática (Static Site Generation) para melhor performance e SEO
 
 ## Stack
@@ -55,9 +57,9 @@ yarn start
 │   ├── images/         # Imagens estáticas (perfil, etc.)
 │   └── *.png|ico|webmanifest  # Favicons e manifest
 └── src/
-    ├── components/     # Componentes reutilizáveis (Card, Head)
-    ├── lib/            # Utilitários (parse de posts, formatDate)
-    ├── pages/          # Páginas (home, blog, privacy)
+    ├── components/     # Componentes reutilizáveis (Layout, Head, PostList, ProjectList, ThemeToggle)
+    ├── lib/            # Leitura dos posts, formatDate e dados do perfil e projetos (site.ts)
+    ├── pages/          # Páginas (home, blog, sobre, privacy)
     └── styles/         # Estilos globais
 ```
 
@@ -73,10 +75,17 @@ title: 'Título do post'
 excerpt: 'Resumo exibido na listagem do blog.'
 date: '2024-01-01'
 author: 'Cleyson Diego'
+cover: '/images/posts/meu-post.png' # opcional
 ---
 
 Conteúdo do post em **Markdown**.
 ```
+
+A capa (`cover`) é opcional, mas recomendada: salve a imagem em `public/images/posts/` (proporção 16:9). Sem ela, a listagem mostra uma capa gerada com o título do post.
+
+## Editando perfil e projetos
+
+O cargo, os links e a lista de projetos open source ficam em `src/lib/site.ts`. Se a lista de projetos estiver vazia, a seção some da home e da página Sobre.
 
 ## Licença
 
