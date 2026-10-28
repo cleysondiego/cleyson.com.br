@@ -1,28 +1,28 @@
 // Tokens de cor. O tema claro fica em :root; o escuro vale pelo sistema
 // (prefers-color-scheme) ou pela escolha manual salva em data-theme.
 :root {
-  --bg: #fbfbfd;
-  --fg: #14171c;
-  --muted: #5f6672;
-  --line: #e4e7ec;
-  --accent: #2c5cc5;
-  --thumb: #e9eef8;
-  --code-bg: #eef1f6;
-  --pre-bg: #151b26;
-  --pre-fg: #e6e9ef;
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #666666;
+  --line: #e8e8e8;
+  --accent: #111111;
+  --thumb: #f1f1f1;
+  --code-bg: #f3f3f3;
+  --pre-bg: #161616;
+  --pre-fg: #ededed;
   color-scheme: light;
 }
 
 @mixin dark-tokens {
-  --bg: #0e1117;
-  --fg: #e6e9ef;
-  --muted: #9aa3b2;
-  --line: #232a35;
-  --accent: #8ab4ff;
-  --thumb: #172033;
-  --code-bg: #172033;
-  --pre-bg: #090c11;
-  --pre-fg: #e6e9ef;
+  --bg: #111111;
+  --fg: #ededed;
+  --muted: #9a9a9a;
+  --line: #262626;
+  --accent: #ededed;
+  --thumb: #1c1c1c;
+  --code-bg: #1c1c1c;
+  --pre-bg: #0a0a0a;
+  --pre-fg: #ededed;
   color-scheme: dark;
 }
 
