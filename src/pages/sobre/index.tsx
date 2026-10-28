@@ -25,8 +25,7 @@ export default function About() {
 
       <div className={styles.content}>
         <p>
-          Sou {profile.name}, {profile.role} na {profile.company}. Sou apaixonado por mobile,
-          resolver problemas e criar produtos incríveis.
+          Sou {profile.name}, {profile.role} na {profile.company}.
         </p>
         <p>
           Neste site eu escrevo sobre desenvolvimento Android, Kotlin e carreira. Minha trajetória

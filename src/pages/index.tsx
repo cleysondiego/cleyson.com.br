@@ -34,8 +34,7 @@ export default function Home({ posts, hasMorePosts }: HomeProps) {
           priority
         />
         <p>
-          Oi, eu sou {profile.name}. Sou {profile.role} na {profile.company}, apaixonado por mobile,
-          resolver problemas e criar produtos incríveis.
+          Oi, eu sou {profile.name}, {profile.role} na {profile.company}.
         </p>
         <p>
           Aqui eu escrevo sobre desenvolvimento Android, Kotlin e carreira. Você também me encontra
