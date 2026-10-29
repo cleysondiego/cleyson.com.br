@@ -5,6 +5,8 @@ export interface PostMeta {
   excerpt: string;
   date: string;
   author: string;
+  cover: string | null;
+  readingTime: number;
 }
 
 export interface Post extends PostMeta {
@@ -17,5 +19,6 @@ export function formatDate(dateString: string): string {
     day: '2-digit',
     month: 'long',
     year: 'numeric',
+    timeZone: 'UTC',
   });
 }

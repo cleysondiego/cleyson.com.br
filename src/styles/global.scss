@@ -1,15 +1,119 @@
+// Tokens de cor. O tema claro fica em :root; o escuro vale pelo sistema
+// (prefers-color-scheme) ou pela escolha manual salva em data-theme.
+:root {
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #666666;
+  --line: #e8e8e8;
+  --accent: #111111;
+  --thumb: #f1f1f1;
+  --code-bg: #f3f3f3;
+  --pre-bg: #161616;
+  --pre-fg: #ededed;
+  color-scheme: light;
+}
+
+@mixin dark-tokens {
+  --bg: #111111;
+  --fg: #ededed;
+  --muted: #9a9a9a;
+  --line: #262626;
+  --accent: #ededed;
+  --thumb: #1c1c1c;
+  --code-bg: #1c1c1c;
+  --pre-bg: #0a0a0a;
+  --pre-fg: #ededed;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    @include dark-tokens;
+  }
+}
+
+:root[data-theme='dark'] {
+  @include dark-tokens;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  font-family: var(--font-sans), system-ui, -apple-system, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
 }
 
 button {
   cursor: pointer;
+  font: inherit;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+code,
+pre {
+  font-family: var(--font-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+
+// Ícones do botão de tema: a lua aparece no tema claro e o sol no escuro.
+.theme-icon-sun {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    .theme-icon-sun {
+      display: block;
+    }
+
+    .theme-icon-moon {
+      display: none;
+    }
+  }
+}
+
+:root[data-theme='dark'] {
+  .theme-icon-sun {
+    display: block;
+  }
+
+  .theme-icon-moon {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }

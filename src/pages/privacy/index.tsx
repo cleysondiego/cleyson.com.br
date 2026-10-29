@@ -1,14 +1,14 @@
 import { Head } from '../../components/Head';
+import { Layout } from '../../components/Layout';
 
 import styles from './styles.module.scss';
 
 export default function Privacy() {
   return (
-    <>
+    <Layout>
       <Head title='Privacy Policy | Cleyson Diego' />
 
-      <main className={styles.container}>
-        <article className={styles.privacy}>
+      <article className={styles.privacy}>
           <h1>Privacy Policy</h1>
           <time>April 6, 2022</time>
 
@@ -28,8 +28,7 @@ export default function Privacy() {
             <p>- Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, ou sobre cassinos, apostas desportiva (ex.: Betano), jogos de sorte e azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;</p>
             <p>- Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) dos aplicativos do cleyson.com, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</p>
           </div>
-        </article>
-      </main>
-    </>
+      </article>
+    </Layout>
   )
 }
