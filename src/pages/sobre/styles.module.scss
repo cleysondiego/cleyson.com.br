@@ -1,7 +1,4 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
   margin-bottom: 2rem;
 
   h1 {
@@ -10,11 +7,6 @@
     letter-spacing: -0.02em;
     line-height: 1.1;
   }
-}
-
-.photo {
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .content {

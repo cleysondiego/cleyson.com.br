@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { Head } from '../../components/Head';
 import { Layout } from '../../components/Layout';
 import { profile, projects } from '../../lib/site';
@@ -12,14 +10,6 @@ export default function About() {
       <Head title={`Sobre | ${profile.name}`} />
 
       <header className={styles.header}>
-        <Image
-          src="/images/profile.jpeg"
-          alt={`Foto de ${profile.name}`}
-          width={96}
-          height={96}
-          className={styles.photo}
-          priority
-        />
         <h1>Sobre</h1>
       </header>
 
